@@ -1,3 +1,5 @@
+'use client'
+
 import { ArrowRight, Shield, Award } from 'lucide-react'
 import WhatsAppButton from './whatsapp-button'
 
