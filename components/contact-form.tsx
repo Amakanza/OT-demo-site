@@ -12,6 +12,15 @@ interface FormData {
   consent: boolean
 }
 
+interface FormErrors {
+  name?: string
+  email?: string
+  phone?: string
+  service?: string
+  message?: string
+  consent?: string
+}
+
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -23,10 +32,10 @@ export default function ContactForm() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  const [errors, setErrors] = useState<Partial<FormData>>({})
+  const [errors, setErrors] = useState<FormErrors>({})
 
   const validateForm = () => {
-    const newErrors: Partial<FormData> = {}
+    const newErrors: FormErrors = {}
     
     if (!formData.name.trim()) newErrors.name = 'Name is required'
     if (!formData.email.trim()) newErrors.email = 'Email is required'
@@ -77,7 +86,7 @@ export default function ContactForm() {
       [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
     }))
     
-    if (errors[name as keyof FormData]) {
+    if (errors[name as keyof FormErrors]) {
       setErrors(prev => ({ ...prev, [name]: undefined }))
     }
   }
