@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #2F6F6D;
+  --brand-600: #1F4C4B;
+  --accent: #E9F6F5;
+  --ink: #0F172A;
+  --muted: #6B7280;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+}
