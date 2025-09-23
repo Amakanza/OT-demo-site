@@ -31,7 +31,7 @@ export default function SiteHeader() {
             </div>
             <div>
               <h1 className="font-serif font-semibold text-lg text-ink">
-                Windhoek OT Practice
+                Demo OT Practice
               </h1>
               <p className="text-xs text-muted">Occupational Therapy</p>
             </div>
