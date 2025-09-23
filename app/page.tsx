@@ -195,25 +195,6 @@ export default function HomePage() {
           </div>
         </Section>
 
-        {/* Testimonials */}
-        <Section id="testimonials">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-serif font-semibold text-ink mb-4">
-                What Our Clients Say
-              </h2>
-              <p className="text-lg text-muted max-w-2xl mx-auto">
-                Real stories from families and individuals who have benefited from our care
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {testimonials.map((testimonial, index) => (
-                <TestimonialCard key={index} {...testimonial} />
-              ))}
-            </div>
-          </div>
-        </Section>
 
         {/* FAQs */}
         <Section id="faq" className="bg-accent/30">
