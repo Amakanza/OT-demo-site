@@ -2,21 +2,21 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Demo Occupational Therapy - Evidence-Based OT Services',
+  title: 'Demo OT Practice - Evidence-Based OT Services',
   description: 'Professional occupational therapy services in Windhoek, Namibia. Specializing in pediatric OT, neuro rehabilitation, hand therapy, and daily living skills for all ages.',
   keywords: 'occupational therapy, Windhoek, Namibia, pediatric OT, hand therapy, neuro rehabilitation, sensory integration, stroke recovery',
   authors: [{ name: 'Demo OT Practice' }],
   openGraph: {
-    title: 'Demo Occupational Therapy - Evidence-Based OT Services',
+    title: 'Demo OT Practice - Evidence-Based OT Services',
     description: 'Professional occupational therapy services in Windhoek, Namibia. Helping children, adults, and seniors achieve independence in daily activities.',
-    url: 'https://Demo-ot.com',
-    siteName: 'Demo Occupational Therapy',
+    url: 'https://demo-ot.com',
+    siteName: 'Demo OT Practice',
     locale: 'en_NA',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Demo Occupational Therapy',
+    title: 'Demo OT Practice',
     description: 'Evidence-based occupational therapy services in Windhoek, Namibia',
   },
   robots: {
@@ -39,10 +39,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "Demo Occupational Therapy Practice",
+              "name": "Demo OT Practice",
               "image": "/logo.svg",
               "@id": "",
-              "url": "https://Demo-ot.com",
+              "url": "https://demo-ot.com",
               "telephone": process.env.NEXT_PUBLIC_CLINIC_PHONE,
               "address": {
                 "@type": "PostalAddress",
