@@ -264,7 +264,7 @@ export default function HomePage() {
               <div className="space-y-2 text-gray-300">
                 <p>Independence Avenue, Windhoek</p>
                 <p>Phone: {process.env.NEXT_PUBLIC_CLINIC_PHONE}</p>
-                <p>Email: hello@windhoek-ot.com</p>
+                <p>Email: hello@demo-ot.com</p>
               </div>
             </div>
             
@@ -289,7 +289,7 @@ export default function HomePage() {
           </div>
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2025 Windhoek Occupational Therapy Practice. All rights reserved.</p>
+            <p>&copy; 2025 Demo Occupational Therapy Practice. All rights reserved.</p>
           </div>
         </div>
       </footer>
